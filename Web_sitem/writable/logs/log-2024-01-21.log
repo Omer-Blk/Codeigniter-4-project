@@ -1,0 +1,61 @@
+INFO - 2024-01-21 19:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 20:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-21 22:24:55 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'web_sitem' in C:\wamp64\www\Web_sitem\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\wamp64\www\Web_sitem\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'web_sitem', 3306, '', 0)
+#1 C:\wamp64\www\Web_sitem\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\Web_sitem\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\Web_sitem\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\Web_sitem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Web_sitem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\Web_sitem\app\Models\AnasayfaModel.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\Web_sitem\app\Controllers\Anasayfa.php(22): App\Models\AnasayfaModel->kayitlar()
+#8 C:\wamp64\www\Web_sitem\system\CodeIgniter.php(941): App\Controllers\Anasayfa->index()
+#9 C:\wamp64\www\Web_sitem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anasayfa))
+#10 C:\wamp64\www\Web_sitem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\Web_sitem\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'web_sitem' in C:\wamp64\www\Web_sitem\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\wamp64\www\Web_sitem\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\Web_sitem\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\Web_sitem\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\Web_sitem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\Web_sitem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\Web_sitem\app\Models\AnasayfaModel.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\Web_sitem\app\Controllers\Anasayfa.php(22): App\Models\AnasayfaModel->kayitlar()
+#7 C:\wamp64\www\Web_sitem\system\CodeIgniter.php(941): App\Controllers\Anasayfa->index()
+#8 C:\wamp64\www\Web_sitem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anasayfa))
+#9 C:\wamp64\www\Web_sitem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\Web_sitem\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-21 22:24:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'web_sitem'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `enstruman`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\AnasayfaModel.php(19): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Anasayfa.php(22): App\Models\AnasayfaModel->kayitlar()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anasayfa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anasayfa))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 22:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 22:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 22:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 22:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 22:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 23:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 23:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 23:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 23:36:42 --> CSRF token verified.
+INFO - 2024-01-21 23:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 23:36:48 --> CSRF token verified.
+INFO - 2024-01-21 23:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 23:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 23:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 23:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

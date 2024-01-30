@@ -1,0 +1,15 @@
+<div class="container" style="margin-bottom: 300px; margin-top: 150px;">
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- Title -->
+            <h1 class="mt-4 text-primary"><i><?= esc($veri['baslik']) ?></i></h1>
+
+            <p>
+                <img src="<?= base_url('uploads/' . esc($veri['resim'])) ?>" style="float: left; margin: 10px;height: 200px;">
+                <?= esc($veri['icerik']) ?>
+            </p>
+            <hr>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
